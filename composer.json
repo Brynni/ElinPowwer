@@ -1,0 +1,22 @@
+{
+  "name": "elinpower/shop",
+  "description": "Elinpower WooCommerce shop",
+  "type": "project",
+  "repositories": [
+    { "type": "composer", "url": "https://wpackagist.org" }
+  ],
+  "require": {
+    "composer/installers": "^2.3",
+    "wpackagist-plugin/woocommerce": "^9.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
+}
